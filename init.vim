@@ -6,13 +6,10 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-" Colorscheme
+" Interface
 colorscheme cobalt2
-
-" Mouse
 set mouse=a
-
-" Number
+set noshowcmd
 set number
 set relativenumber
 
