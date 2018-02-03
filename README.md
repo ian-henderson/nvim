@@ -6,17 +6,7 @@ A nvim configuration directory. Plugins are added to the runtime path via Tim Po
 
 Run this command from your `~/.config` directory:
 
-`git clone --recurse-submodules https://github.com/ian-henderson/nvim.git`
-
-## Updating
-
-Run this command from the top directory:
-
-`git submodule update -f --recursive --remote`
-
-Optional: Create an alias for your shell, e.g.
-
-`alias vim-update='git -C $HOME/.config/nvim submodule update -f --recursive --remote'`
+`mkdir ~/.config && git clone --recurse-submodules https://github.com/ian-henderson/nvim.git ~/.config/nvim`
 
 ## Plugins
 
@@ -25,3 +15,13 @@ Optional: Create an alias for your shell, e.g.
 * [pangloss/vim-javascript](https://github.com/pangloss/vim-javascript)
 * [mxw/vim-jsx](https://github.com/mxw/vim-jsx)
 * [ervandew/supertab](https://github.com/ervandew/supertab)
+
+### Updating Plugins
+
+Run this command from your `~/.config/nvim` directory:
+
+`git -C $HOME/.config/nvim submodule update -f --recursive --remote`
+
+Recommended: Create an alias for your shell, e.g.
+
+`alias vim-update='git -C $HOME/.config/nvim submodule update -f --recursive --remote'`
