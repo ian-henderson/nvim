@@ -16,7 +16,7 @@ Run this command from the top directory:
 
 Optional: Create an alias for your shell, e.g.
 
-`alias update-vim='git -C $HOME/.config/nvim submodule update -f --recursive --remote'`
+`alias vim-update='git -C $HOME/.config/nvim submodule update -f --recursive --remote'`
 
 ## Plugins
 
