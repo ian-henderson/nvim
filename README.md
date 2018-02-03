@@ -8,6 +8,10 @@ cd ~/.config/;
 git clone --recurse-submodules https://github.com/ian-henderson/nvim.git;
 ```
 
+## Updating
+
+`git submodule update -f --recursive --remote;`
+
 ## Plugins
 
 * [tpope/vim-sensible](https://github.com/tpope/vim-sensible)
