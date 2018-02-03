@@ -30,8 +30,8 @@
 " = Tabstop (:help 'tabstop', option 2)
 " ==============================================================================
   set expandtab
-  set shiftwidth=8
-  set tabstop=8
+  set shiftwidth=4
+  set tabstop=4
 
 " ==============================================================================
 " = vim-jsx
