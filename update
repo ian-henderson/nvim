@@ -1,5 +1,0 @@
-#!/bin/bash
-
-export PWD=/Users/ian/.config/nvim
-
-git submodule update --recursive --remote -f
