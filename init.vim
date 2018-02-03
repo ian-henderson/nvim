@@ -4,18 +4,19 @@
 " ==============================================================================
 
 " ==============================================================================
-" = Pathogen
+" = Vim & Pathogen
 " ==============================================================================
-  execute pathogen#infect()
-  syntax on
   filetype plugin indent on
+  syntax on
+" Removes trailing whitespace on save
+  autocmd BufWritePre * %s/\s\+$//e
 
 " ==============================================================================
-" = Misc. Settings
+" = Pathogen & Plugins
 " ==============================================================================
-  autocmd BufWritePre * %s/\s\+$//e  " Remove trailing whitespace on save.
-  nnoremap <Leader>s :source $MYVIMRC<CR>
-  nnoremap <esc> :noh<return><esc>
+  execute pathogen#infect()
+" vim-jsx
+  let g:jsx_ext_required=0
 
 " ==============================================================================
 " = Interface
@@ -27,13 +28,17 @@
   set relativenumber
 
 " ==============================================================================
+" = Mappings
+" ==============================================================================
+  nnoremap <Leader>s :source $MYVIMRC<CR>
+" <esc> clears text highlighted by search
+  nnoremap <esc> :noh<return><esc>
+" Jumps between buffers
+  nnoremap gb :ls<CR>:b<Space>
+
+" ==============================================================================
 " = Tabstop (:help 'tabstop', option 2)
 " ==============================================================================
   set expandtab
   set shiftwidth=4
   set tabstop=4
-
-" ==============================================================================
-" = vim-jsx
-" ==============================================================================
-  let g:jsx_ext_required=0
