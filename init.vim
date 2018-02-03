@@ -26,7 +26,7 @@ set relativenumber
 nnoremap <esc> :noh<return><esc>
 
 " ==============================================================================
-" = Tabstop (option 2)
+" = Tabstop (:help 'tabstop', option 2)
 " ==============================================================================
 set expandtab
 set shiftwidth=8
