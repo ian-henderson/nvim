@@ -4,9 +4,9 @@ A nvim configuration directory. Plugins are added to the runtime path via Tim Po
 
 ## Installation
 
-Run this command from your `~/.config` directory:
+Run this command:
 
-`mkdir ~/.config && git clone --recurse-submodules https://github.com/ian-henderson/nvim.git ~/.config/nvim`
+`mkdir ~/.config; git clone --recurse-submodules https://github.com/ian-henderson/nvim.git ~/.config/nvim;`
 
 ## Plugins
 
@@ -18,10 +18,12 @@ Run this command from your `~/.config` directory:
 
 ### Updating Plugins
 
-Run this command from your `~/.config/nvim` directory:
+Run this command:
 
 `git -C $HOME/.config/nvim submodule update -f --recursive --remote`
 
-Recommended: Create an alias for your shell, e.g.
+#### Recommended
+
+Create an alias for your shell, e.g.
 
 `alias vim-update='git -C $HOME/.config/nvim submodule update -f --recursive --remote'`
