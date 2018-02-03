@@ -10,11 +10,12 @@ Run this command:
 
 ## Plugins
 
-* [tpope/vim-sensible](https://github.com/tpope/vim-sensible)
-* [flazz/vim-colorschemes](https://github.com/flazz/vim-colorschemes)
-* [pangloss/vim-javascript](https://github.com/pangloss/vim-javascript)
-* [mxw/vim-jsx](https://github.com/mxw/vim-jsx)
+* [alvan/vim-closetag](https://github.com/alvan/vim-closetag)
 * [ervandew/supertab](https://github.com/ervandew/supertab)
+* [flazz/vim-colorschemes](https://github.com/flazz/vim-colorschemes)
+* [mxw/vim-jsx](https://github.com/mxw/vim-jsx)
+* [pangloss/vim-javascript](https://github.com/pangloss/vim-javascript)
+* [tpope/vim-sensible](https://github.com/tpope/vim-sensible)
 
 ### Updating Plugins
 
