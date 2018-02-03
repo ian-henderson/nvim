@@ -9,9 +9,13 @@ A nvim configuration directory. Plugins are added to the runtime path via Tim Po
 
 ## Updating
 
-`cd ~/.config/nvim;`
+Run this command from the top of the `nvim` directory.
 
 `git submodule update -f --recursive --remote;`
+
+Personally, I add a `vim_update` alias to my shell environment, e.g.
+
+`alias vim_update='git -C $HOME/.config/nvim submodule update -f --recursive --remote'`
 
 ## Plugins
 
