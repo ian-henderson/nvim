@@ -6,33 +6,34 @@
 " ==============================================================================
 " = Pathogen
 " ==============================================================================
-execute pathogen#infect()
-syntax on
-filetype plugin indent on
+  execute pathogen#infect()
+  syntax on
+  filetype plugin indent on
+
+" ==============================================================================
+" = Misc. Settings
+" ==============================================================================
+  autocmd BufWritePre * %s/\s\+$//e  " Remove trailing whitespace on save.
+  nnoremap <Leader>s :source $MYVIMRC<CR>
+  nnoremap <esc> :noh<return><esc>
 
 " ==============================================================================
 " = Interface
 " ==============================================================================
-colorscheme cobalt2
-set mouse=a
-set noshowcmd
-set number
-set relativenumber
-
-" ==============================================================================
-" = Search
-" ==============================================================================
-" Clears highlighted text when <esc> is pressed.
-nnoremap <esc> :noh<return><esc>
+  colorscheme cobalt2
+  set mouse=a
+  set noshowcmd
+  set number
+  set relativenumber
 
 " ==============================================================================
 " = Tabstop (:help 'tabstop', option 2)
 " ==============================================================================
-set expandtab
-set shiftwidth=8
-set tabstop=8
+  set expandtab
+  set shiftwidth=8
+  set tabstop=8
 
 " ==============================================================================
 " = vim-jsx
 " ==============================================================================
-let g:jsx_ext_required=0
+  let g:jsx_ext_required=0
