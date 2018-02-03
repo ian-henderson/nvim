@@ -21,8 +21,8 @@ Run this command:
 
 Run this command:
 
-`git -C $HOME/.config/nvim submodule update -f --recursive --remote`
+`git -C ~/.config/nvim submodule update -f --recursive --remote`
 
 Create an alias for your shell, e.g.
 
-`alias vim-update='git -C $HOME/.config/nvim submodule update -f --recursive --remote'`
+`alias vim-update='git -C ~/.config/nvim submodule update -f --recursive --remote'`
