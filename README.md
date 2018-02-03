@@ -1,21 +1,22 @@
 # Neovim Config
+
 A nvim configuration directory. Plugins are added to the runtime path via Tim Pope's [vim-pathogen](https://github.com/tpope/vim-pathogen)!
 
 ## Installation
 
-`cd ~/.config;`
+Run this command from your `~/.config` directory:
 
-`git clone --recurse-submodules https://github.com/ian-henderson/nvim.git;`
+`git clone --recurse-submodules https://github.com/ian-henderson/nvim.git`
 
 ## Updating
 
-Run this command from the top of the `nvim` directory.
+Run this command from the top directory:
 
-`git submodule update -f --recursive --remote;`
+`git submodule update -f --recursive --remote`
 
-Personally, I add an alias to my shell environment, e.g.
+Optional: Create an alias for your shell, e.g.
 
-`alias vim_update='git -C $HOME/.config/nvim submodule update -f --recursive --remote'`
+`alias update-vim='git -C $HOME/.config/nvim submodule update -f --recursive --remote'`
 
 ## Plugins
 
