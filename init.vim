@@ -15,13 +15,27 @@
 " = Pathogen & Plugins
 " ==============================================================================
   execute pathogen#infect()
+" vim-closetag
+  let g:closetag_filenames='*.html,*.js,*.php'
 " vim-jsx
   let g:jsx_ext_required=0
 
 " ==============================================================================
+" = Indenting
+" ==============================================================================
+  set breakindent
+  set linebreak
+" Tabstop (:help 'tabstop', option 2)
+  set expandtab
+  set shiftwidth=2
+  set tabstop=2
+
+" ==============================================================================
 " = Interface
 " ==============================================================================
-  colorscheme cobalt2
+  colorscheme dracula
+  set background=dark
+  set cursorline
   set mouse=a
   set noshowcmd
   set number
@@ -37,8 +51,12 @@
   nnoremap gb :ls<CR>:b<Space>
 
 " ==============================================================================
-" = Tabstop (:help 'tabstop', option 2)
+" = Search
 " ==============================================================================
-  set expandtab
-  set shiftwidth=4
-  set tabstop=4
+  set incsearch
+  set ignorecase
+  set path+=**
+  set smartcase
+  set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+  set wildignorecase
+  set wildmenu
