@@ -3,11 +3,13 @@ A nvim configuration directory. Plugins are added to the runtime path via Tim Po
 
 ## Installation
 
-`cd ~/.config/;`
+`cd ~/.config;`
 
 `git clone --recurse-submodules https://github.com/ian-henderson/nvim.git;`
 
 ## Updating
+
+`cd ~/.config/nvim;`
 
 `git submodule update -f --recursive --remote;`
 
