@@ -11,6 +11,7 @@ Run this command:
 ## Plugins
 
 * [alvan/vim-closetag](https://github.com/alvan/vim-closetag)
+* [elixir-editors/vim-elixir](https://github.com/elixir-editors/vim-elixir)
 * [ervandew/supertab](https://github.com/ervandew/supertab)
 * [flazz/vim-colorschemes](https://github.com/flazz/vim-colorschemes)
 * [mxw/vim-jsx](https://github.com/mxw/vim-jsx)
