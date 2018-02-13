@@ -33,13 +33,10 @@
 " ==============================================================================
 " = Interface
 " ==============================================================================
-  colorscheme dracula
+  colorscheme cobalt2
   set background=dark
-  set cursorline
   set mouse=a
   set noshowcmd
-  set number
-  set relativenumber
 
 " ==============================================================================
 " = Mappings
