@@ -14,16 +14,19 @@ Run this command:
 * [elixir-editors/vim-elixir](https://github.com/elixir-editors/vim-elixir)
 * [ervandew/supertab](https://github.com/ervandew/supertab)
 * [flazz/vim-colorschemes](https://github.com/flazz/vim-colorschemes)
+* [leafgarland/typescript-vim](https://github.com/leafgarland/typescript-vim)
 * [mxw/vim-jsx](https://github.com/mxw/vim-jsx)
 * [pangloss/vim-javascript](https://github.com/pangloss/vim-javascript)
 * [tpope/vim-sensible](https://github.com/tpope/vim-sensible)
 
-### Updating Plugins
+### Adding Plugins
 
-Run this command:
+`git submodule add [plugin url] bundle/[plugin name]`
+
+### Updating Plugins
 
 `git -C ~/.config/nvim submodule update -f --recursive --remote`
 
-Create an alias for your shell, e.g.
+#### Create an alias for your shell
 
 `alias vim-update='git -C ~/.config/nvim submodule update -f --recursive --remote'`
