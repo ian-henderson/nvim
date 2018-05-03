@@ -33,7 +33,7 @@
 " ==============================================================================
 " = Interface
 " ==============================================================================
-  colorscheme dracula
+  colorscheme materialtheme
   set mouse=a
   set noshowcmd
   let &showbreak='+++ '
