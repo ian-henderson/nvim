@@ -23,20 +23,16 @@
 
 " Indentation:
 " ------------------------------------------------------------------------------
-  set breakindent
-  set linebreak
+  set breakindent linebreak
 " Tabstop (:help 'tabstop', option 2)
-  set expandtab
-  set shiftwidth=2
-  set tabstop=2
+  set expandtab shiftwidth=2 tabstop=2
 
 
 " Interface:
 " ------------------------------------------------------------------------------
   colorscheme materialtheme
-  set mouse=a
-  set noshowcmd
   let &showbreak='+++ '
+  set mouse=a noshowcmd number relativenumber
 
 
 " Mappings:
@@ -54,10 +50,5 @@
 
 " Search:
 " ------------------------------------------------------------------------------
-  set incsearch
-  set ignorecase
-  set path+=**
-  set smartcase
-  set wildignore+=*/tmp/*,*.so,*.swp,*.zip
-  set wildignorecase
-  set wildmenu
+  set incsearch ignorecase smartcase path+=**
+  set wildmenu wildignorecase wildignore+=*/tmp/*,*.so,*.swp,*.zip
