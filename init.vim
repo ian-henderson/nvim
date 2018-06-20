@@ -30,9 +30,9 @@
 
 " Interface:
 " ------------------------------------------------------------------------------
-  colorscheme materialtheme
+  colorscheme default
   let &showbreak='+++ '
-  set mouse=a noshowcmd number relativenumber
+  set background=dark mouse=a noshowcmd number relativenumber
 
 
 " Mappings:
