@@ -4,8 +4,6 @@ A nvim configuration directory. Plugins are added to the runtime path via Tim Po
 
 ## Installation
 
-Run this command:
-
 `mkdir -p ~/.config && git clone --recurse-submodules https://github.com/ian-henderson/nvim.git ~/.config/nvim`
 
 ## Plugins
