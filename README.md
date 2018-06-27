@@ -23,6 +23,10 @@ Run this command:
 
 `git submodule add [plugin url] bundle/[plugin name]`
 
+### Removing Plugins
+
+[StackOverflow Solution](https://stackoverflow.com/questions/1260748/how-do-i-remove-a-submodule#1260982)
+
 ### Updating Plugins
 
 `git -C ~/.config/nvim submodule update -f --recursive --remote`
