@@ -10,14 +10,12 @@ Run this command:
 
 ## Plugins
 
-* [alvan/vim-closetag](https://github.com/alvan/vim-closetag)
-* [elixir-editors/vim-elixir](https://github.com/elixir-editors/vim-elixir)
-* [ervandew/supertab](https://github.com/ervandew/supertab)
-* [flazz/vim-colorschemes](https://github.com/flazz/vim-colorschemes)
-* [leafgarland/typescript-vim](https://github.com/leafgarland/typescript-vim)
-* [mxw/vim-jsx](https://github.com/mxw/vim-jsx)
-* [pangloss/vim-javascript](https://github.com/pangloss/vim-javascript)
-* [tpope/vim-sensible](https://github.com/tpope/vim-sensible)
+* [closetag](https://github.com/alvan/vim-closetag)
+* [colorschemes](https://github.com/flazz/vim-colorschemes)
+* [javascript](https://github.com/pangloss/vim-javascript)
+* [jsx](https://github.com/mxw/vim-jsx)
+* [supertab](https://github.com/ervandew/supertab)
+* [vim-sensible](https://github.com/tpope/vim-sensible)
 
 ### Adding Plugins
 
