@@ -9,7 +9,6 @@ A nvim configuration directory. Plugins are added to the runtime path via Tim Po
 ## Plugins
 
 * [closetag](https://github.com/alvan/vim-closetag)
-* [colorschemes](https://github.com/flazz/vim-colorschemes)
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 * [javascript](https://github.com/pangloss/vim-javascript)
 * [jsx](https://github.com/mxw/vim-jsx)
