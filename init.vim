@@ -64,5 +64,3 @@
   let g:ctrlp_cmd = 'CtrlP'
 " palenight
   let g:palenight_terminal_italics=1
-" vim-flow
-  let g:flow#autoclose = 1
