@@ -14,6 +14,7 @@ A nvim configuration directory. Plugins are added to the runtime path via Tim Po
 * [javascript](https://github.com/pangloss/vim-javascript)
 * [jsx](https://github.com/mxw/vim-jsx)
 * [supertab](https://github.com/ervandew/supertab)
+* [vim-flow](https://github.com/flowtype/vim-flow)
 * [vim-sensible](https://github.com/tpope/vim-sensible)
 
 ### Adding Plugins

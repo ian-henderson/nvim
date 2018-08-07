@@ -30,7 +30,7 @@
 
 " Interface:
 " ------------------------------------------------------------------------------
-  colorscheme default
+  colorscheme materialtheme
   let &showbreak='+++ '
   set background=dark mouse=a noshowcmd number relativenumber
 
@@ -59,3 +59,5 @@
 " Ctrlp
   let g:ctrlp_map = '<c-p>'
   let g:ctrlp_cmd = 'CtrlP'
+" vim-flow
+  let g:flow#autoclose = 1
