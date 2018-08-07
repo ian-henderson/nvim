@@ -49,6 +49,8 @@
 " Moves the cursor through soft-wrapped lines
   nnoremap <expr> j v:count ? 'j' : 'gj'
   nnoremap <expr> k v:count ? 'k' : 'gk'
+" nerdtree
+  map <C-n> :NERDTreeToggle<CR>
 
 
 " Search:
@@ -62,5 +64,14 @@
 " Ctrlp
   let g:ctrlp_map = '<c-p>'
   let g:ctrlp_cmd = 'CtrlP'
+" nerdtree
+  " opens nerdtree if no file is specified
+    autocmd StdinReadPre * let s:std_in=1
+    autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+  " opens nerdtree if directory is opened
+    autocmd StdinReadPre * let s:std_in=1
+    autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+  " closes vim if only window left open is nerdtree
+    autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " palenight
   let g:palenight_terminal_italics=1
