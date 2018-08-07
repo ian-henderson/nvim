@@ -13,9 +13,6 @@
 " Removes trailing whitespace on save
   autocmd BufWritePre * %s/\s\+$//e
 
-" Custom File Types
-  au BufNewFile,BufRead *.story set filetype=javascript
-
 
 " Pathogen:
 " ------------------------------------------------------------------------------
@@ -45,10 +42,10 @@
 
 " nerdtree
   " opens nerdtree if no file is specified
-    autocmd StdinReadPre * let s:std_in=1
+    autocmd StdinReadPre * let s:std_in = 1
     autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
   " opens nerdtree if directory is opened
-    autocmd StdinReadPre * let s:std_in=1
+    autocmd StdinReadPre * let s:std_in = 1
     autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
   " closes vim if only window left open is nerdtree
     autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
@@ -56,13 +53,14 @@
     map <C-n> :NERDTreeToggle<CR>
 
 " palenight
-  let g:palenight_terminal_italics=1
+  let g:palenight_terminal_italics = 1
 
 " vim-closetag
-  let g:closetag_filenames='*.html,*.js,*.php'
+  let g:closetag_filenames = '*.html,*.js,*.php'
 
 " vim-jsx
-  let g:jsx_ext_required=0
+  let g:jsx_ext_required = 0
+  au BufNewFile,BufRead *.story set filetype=javascript.jsx
 
 
 " Indentation:
