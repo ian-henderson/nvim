@@ -30,9 +30,12 @@
 
 " Interface:
 " ------------------------------------------------------------------------------
-  colorscheme materialtheme
+  if (has("termguicolors"))
+    set termguicolors
+  endif
   let &showbreak='+++ '
   set background=dark mouse=a noshowcmd number relativenumber
+  colorscheme palenight
 
 
 " Mappings:
@@ -59,5 +62,7 @@
 " Ctrlp
   let g:ctrlp_map = '<c-p>'
   let g:ctrlp_cmd = 'CtrlP'
+" palenight
+  let g:palenight_terminal_italics=1
 " vim-flow
   let g:flow#autoclose = 1
