@@ -8,6 +8,7 @@ A nvim configuration directory. Plugins are added to the runtime path via Tim Po
 
 ## Plugins
 
+* [ale](https://github.com/w0rp/ale)
 * [closetag](https://github.com/alvan/vim-closetag)
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 * [javascript](https://github.com/pangloss/vim-javascript)
