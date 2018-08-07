@@ -13,6 +13,9 @@
 " Removes trailing whitespace on save
   autocmd BufWritePre * %s/\s\+$//e
 
+" Custom File Types
+  au BufNewFile,BufRead *.story set filetype=javascript
+
 
 " Pathogen:
 " ------------------------------------------------------------------------------
