@@ -10,6 +10,7 @@ A nvim configuration directory. Plugins are added to the runtime path via Tim Po
 
 * [closetag](https://github.com/alvan/vim-closetag)
 * [colorschemes](https://github.com/flazz/vim-colorschemes)
+* [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 * [javascript](https://github.com/pangloss/vim-javascript)
 * [jsx](https://github.com/mxw/vim-jsx)
 * [supertab](https://github.com/ervandew/supertab)
@@ -27,6 +28,6 @@ A nvim configuration directory. Plugins are added to the runtime path via Tim Po
 
 `git -C ~/.config/nvim submodule update -f --recursive --remote`
 
-#### Create an alias for your shell
+#### Alias for your shell
 
 `alias vim-update='git -C ~/.config/nvim submodule update -f --recursive --remote'`

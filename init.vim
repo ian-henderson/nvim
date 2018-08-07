@@ -52,3 +52,10 @@
 " ------------------------------------------------------------------------------
   set incsearch ignorecase smartcase path+=**
   set wildmenu wildignorecase wildignore+=*/tmp/*,*.so,*.swp,*.zip
+
+
+" Plugins:
+" ------------------------------------------------------------------------------
+" Ctrlp
+  let g:ctrlp_map = '<c-p>'
+  let g:ctrlp_cmd = 'CtrlP'
