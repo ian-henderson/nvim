@@ -26,8 +26,8 @@
     \}
     highlight clear ALEErrorSign " otherwise uses error bg color (typically red)
     highlight clear ALEWarningSign " otherwise uses error bg color (typically red)
-    let g:ale_sign_error = '🔥' " could use emoji
-    let g:ale_sign_warning = '⚠️' " could use emoji
+    let g:ale_sign_error = '!' " could use emoji
+    let g:ale_sign_warning = '?' " could use emoji
     let g:ale_statusline_format = ['X %d', '? %d', '']
   " %linter% is the name of the linter that provided the message
   " %s is the error or warning message
@@ -39,6 +39,9 @@
 " ctrlp
   let g:ctrlp_map = '<c-p>'
   let g:ctrlp_cmd = 'CtrlP'
+  let g:ctrlp_custom_ignore = {
+  \  'dir':  '\v[\/]\.(git|hg|svn|node_modules)$',
+  \}
 
 " nerdtree
   " opens nerdtree if no file is specified
