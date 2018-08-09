@@ -1,3 +1,6 @@
+[submodule "bundle/ale"]
+  path = bundle/ale
+  url = https://github.com/w0rp/ale.git
 [submodule "bundle/ctrlp"]
   path = bundle/ctrlp
   url = https://github.com/ctrlpvim/ctrlp.vim.git
@@ -22,6 +25,3 @@
 [submodule "bundle/vim-sensible"]
   path = bundle/vim-sensible
   url = https://github.com/tpope/vim-sensible.git
-[submodule "bundle/ale"]
-	path = bundle/ale
-	url = https://github.com/w0rp/ale.git
