@@ -1,6 +1,6 @@
-# Neovim Config
+# Neovim
 
-A nvim configuration directory. Plugins are added to the runtime path via Tim Pope's [vim-pathogen](https://github.com/tpope/vim-pathogen)!
+My personal NeoVim setup. Plugins are added to the runtime path via [vim-pathogen](https://github.com/tpope/vim-pathogen).
 
 ## Installation
 
