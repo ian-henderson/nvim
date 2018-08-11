@@ -1,4 +1,4 @@
-# Neovim
+# NeoVim
 
 My personal NeoVim setup. Plugins are added to the runtime path via [vim-pathogen](https://github.com/tpope/vim-pathogen).
 
