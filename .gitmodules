@@ -28,3 +28,6 @@
 [submodule "bundle/vim-sensible"]
   path = bundle/vim-sensible
   url = https://github.com/tpope/vim-sensible.git
+[submodule "bundle/auto-pairs"]
+	path = bundle/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git

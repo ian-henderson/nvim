@@ -12,6 +12,7 @@ My personal NeoVim setup. Plugins are added to the runtime path via [vim-pathoge
 ## Plugins
 
 * [ale](https://github.com/w0rp/ale)
+* [auto-pairs](https://github.com/jiangmiao/auto-pairs)
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 * [nerdtree](https://github.com/scrooloose/nerdtree)
 * [palenight](https://github.com/drewtempelmeyer/palenight.vim)

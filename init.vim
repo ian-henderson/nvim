@@ -38,6 +38,9 @@
     nnoremap <leader>an :ALENextWrap<cr>
     nnoremap <leader>ap :ALEPreviousWrap<cr>
 
+" auto-pairs
+  let g:AutoPairsFlyMode = 1
+
 " ctrlp
   let g:ctrlp_map = '<c-p>'
   let g:ctrlp_cmd = 'CtrlP'
