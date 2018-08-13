@@ -57,9 +57,6 @@
   " mapping
     map <C-n> :NERDTreeToggle<CR>
 
-" palenight
-  let g:palenight_terminal_italics = 1
-
 " vim-closetag
   let g:closetag_filenames = '*.html,*.js,*.php'
 
@@ -87,7 +84,7 @@
   endif
   let &showbreak='+++ '
   set background=dark mouse=a noshowcmd number relativenumber
-  colorscheme palenight
+  colorscheme jellybeans
 
 
 " ------------------------------------------------------------------------------
