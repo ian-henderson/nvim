@@ -83,8 +83,9 @@
     set termguicolors
   endif
   let &showbreak='+++ '
-  set background=dark mouse=a noshowcmd number relativenumber
+  set background=dark cursorline mouse=a noshowcmd number relativenumber
   colorscheme jellybeans
+  highlight clear SignColumn
 
 
 " ------------------------------------------------------------------------------
