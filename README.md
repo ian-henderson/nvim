@@ -22,6 +22,7 @@ My personal NeoVim setup. Plugins are added to the runtime path via [vim-pathoge
 * [vim-colorschemes](https://github.com/flazz/vim-colorschemes)
 * [vim-closetag](https://github.com/alvan/vim-closetag)
 * [vim-fugitive](https://github.com/tpope/vim-fugitive)
+* [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 * [vim-graphql](https://github.com/jparise/vim-graphql)
 * [vim-javascript](https://github.com/pangloss/vim-javascript)
 * [vim-jsx](https://github.com/mxw/vim-jsx)
