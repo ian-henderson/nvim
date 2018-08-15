@@ -26,7 +26,6 @@ My personal NeoVim setup. Plugins are added to the runtime path via [vim-pathoge
 * [vim-javascript](https://github.com/pangloss/vim-javascript)
 * [vim-jsx](https://github.com/mxw/vim-jsx)
 * [vim-sensible](https://github.com/tpope/vim-sensible)
-* [vim-startify](https://github.com/mhinz/vim-startify)
 
 ### Adding Plugins
 
