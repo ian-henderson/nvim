@@ -63,11 +63,11 @@
 " vim-gitgutter
   set updatetime=100
   nmap ]h <Plug>GitGutterNextHunk
-	nmap [h <Plug>GitGutterPrevHunk<Paste>
+  nmap [h <Plug>GitGutterPrevHunk<Paste>
 
 " vim-jsx
   let g:jsx_ext_required = 0
-  au BufNewFile,BufRead *.story set filetype=javascript.jsx
+  au BufNewFile,BufRead *-story.js set filetype=javascript.jsx
 
 
 " ------------------------------------------------------------------------------
