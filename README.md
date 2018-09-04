@@ -18,8 +18,8 @@ My personal NeoVim setup. Plugins are added to the runtime path via [vim-pathoge
 * [supertab](https://github.com/ervandew/supertab)
 * [vim-airline](https://github.com/vim-airline/vim-airline)
 * [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
-* [vim-colorschemes](https://github.com/flazz/vim-colorschemes)
 * [vim-closetag](https://github.com/alvan/vim-closetag)
+* [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)
 * [vim-fugitive](https://github.com/tpope/vim-fugitive)
 * [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 * [vim-graphql](https://github.com/jparise/vim-graphql)
@@ -29,7 +29,9 @@ My personal NeoVim setup. Plugins are added to the runtime path via [vim-pathoge
 
 ### Adding Plugins
 
-`git submodule add [plugin url] bundle/[plugin name]`
+```bash
+git submodule add [plugin url] bundle/[plugin name]
+```
 
 ### Removing Plugins
 
@@ -45,8 +47,12 @@ My personal NeoVim setup. Plugins are added to the runtime path via [vim-pathoge
 
 ### Updating Plugins
 
-`git -C ~/.config/nvim submodule update -f --recursive --remote`
+```bash
+git -C ~/.config/nvim submodule update -f --recursive --remote
+```
 
 #### Alias for your shell
 
-`alias vim-update='git -C ~/.config/nvim submodule update -f --recursive --remote'`
+```bash
+alias vim-update='git -C ~/.config/nvim submodule update -f --recursive --remote'
+```
