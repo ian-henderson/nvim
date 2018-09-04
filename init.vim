@@ -88,9 +88,9 @@
     set termguicolors
   endif
   let &showbreak='+++ '
-  set background=dark cursorline mouse=a noshowcmd number relativenumber
+  set background=dark mouse=a noshowcmd number relativenumber
   colorscheme onedark
-  highlight clear SignColumn
+  " highlight clear SignColumn
 
 
 " ------------------------------------------------------------------------------
