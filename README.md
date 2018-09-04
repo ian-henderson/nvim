@@ -30,7 +30,7 @@ My personal NeoVim setup. Plugins are added to the runtime path via [vim-pathoge
 ### Adding Plugins
 
 ```bash
-git submodule add [plugin url] bundle/[plugin name]
+./cli.sh install [plugin url]
 ```
 
 ### Removing Plugins

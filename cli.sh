@@ -14,6 +14,10 @@ while (( $# > 0 )); do
       ./scripts/install.sh $@
       exit 0
       ;;
+    uninstall|un)
+      ./scripts/uninstall.sh $@
+      exit 0
+      ;;
     *)
       ./scripts/cli_description.sh
       exit 1

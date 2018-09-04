@@ -3,7 +3,7 @@
 echo -e "\nUsage: <command>\n"
 echo -e "where <command> is one of:"
 
-accepted_args=(install i)
+accepted_args=(install i uninstall un)
 args_string=""
 
 for index in ${!accepted_args[@]}; do
