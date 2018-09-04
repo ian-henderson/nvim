@@ -20,7 +20,7 @@ if $plugin_not_found; then
 fi
 
 for plugin_name in $@; do
-  git rm -f ./bundle/$plugin_name
+  git rm -fq ./bundle/$plugin_name
   rm -rf .git/modules/bundle/$plugin_name
   git config --remove-section submodule.bundle/$plugin_name
   rm -rf bundle/$plugin_name
