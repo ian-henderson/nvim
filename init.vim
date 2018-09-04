@@ -60,6 +60,10 @@
 " vim-closetag
   let g:closetag_filenames = '*.html,*.js,*.php'
 
+" vim-colors-solarized
+  let g:solarized_italic=1
+  call togglebg#map("<F5>")
+
 " vim-gitgutter
   set updatetime=100
   nmap ]h <Plug>GitGutterNextHunk
@@ -84,12 +88,9 @@
 " Interface:
 " ------------------------------------------------------------------------------
 
-  if (has("termguicolors"))
-    set termguicolors
-  endif
   let &showbreak='+++ '
-  set background=dark cursorline mouse=a noshowcmd number relativenumber
-  colorscheme onedark
+  set background=dark mouse=a noshowcmd number relativenumber
+  colorscheme solarized
   highlight clear SignColumn
 
 
