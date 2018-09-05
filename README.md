@@ -1,6 +1,6 @@
 # NeoVim
 
-My personal NeoVim setup. Plugins are added to the runtime path via [vim-pathogen](https://github.com/tpope/vim-pathogen).
+My personal NeoVim directory. Plugins are added to the runtime path via [vim-pathogen](https://github.com/tpope/vim-pathogen).
 
 ## Installation
 
@@ -9,7 +9,7 @@ My personal NeoVim setup. Plugins are added to the runtime path via [vim-pathoge
   git clone --recurse-submodules https://github.com/ian-henderson/nvim.git ~/.config/nvim;
 ```
 
-## Plugins
+## Current Plugins
 
 * [ale](https://github.com/w0rp/ale)
 * [auto-pairs](https://github.com/jiangmiao/auto-pairs)
@@ -29,10 +29,10 @@ My personal NeoVim setup. Plugins are added to the runtime path via [vim-pathoge
 
 ### Plugin CLI
 
-#### Adding a plugin
+#### Adding one or more plugins
 
 ```bash
-./cli.sh install [plugin git url]
+./cli.sh install [<plugin-git-url>...]
 ```
 
 #### Listing plugins
@@ -41,7 +41,7 @@ My personal NeoVim setup. Plugins are added to the runtime path via [vim-pathoge
 ./cli.sh list
 ```
 
-#### Removing a plugin
+#### Removing one or more plugins
 
 ```bash
 ./cli.sh uninstall [<plugin>...]
