@@ -18,6 +18,10 @@ while (( $# > 0 )); do
       ./scripts/uninstall.sh $@
       exit 0
       ;;
+    list|ls)
+      ./scripts/list.sh
+      exit 0
+      ;;
     *)
       ./scripts/cli_description.sh
       exit 1
