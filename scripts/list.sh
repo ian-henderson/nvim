@@ -8,6 +8,5 @@ fi
 plugins=$(git config --name-only --get-regexp submodule.bundle/*)
 
 for plugin in $plugins; do
-  plugin_name=$(basename -- $plugin .url)
-  echo $plugin_name
+  basename $plugin .url
 done | sort
