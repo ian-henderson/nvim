@@ -5,12 +5,18 @@ if [ $# -eq 0 ]; then
   exit 1
 fi
 
+invalid_git_url=false
+
 for url in $@; do
   if [[ $url != *.git ]]; then
-    echo Invalid git url: $url
-    exit 1
+    echo Invalid git url: $url.
+    $invalid_git_url=true
   fi
 done
+
+if $invalid_git_url; then
+  exit 1
+fi
 
 for url in $@; do
   plugin_name=$(basename -- $url .git)

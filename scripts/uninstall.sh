@@ -8,8 +8,9 @@ fi
 plugin_not_found=false
 
 for plugin_name in $@; do
-  # TODO: make sure this is the best way to check for plugin
-  if [ ! -e .git/modules/bundle/$plugin_name ]; then
+  plugin_url=$(git config --get submodule.bundle/$plugin_name.url)
+
+  if [ ! $plugin_url ]; then
     echo $plugin_name not found.
     plugin_not_found=true
   fi
@@ -20,9 +21,8 @@ if $plugin_not_found; then
 fi
 
 for plugin_name in $@; do
-  git rm -fq ./bundle/$plugin_name
-  rm -rf .git/modules/bundle/$plugin_name
   git config --remove-section submodule.bundle/$plugin_name
-  rm -rf bundle/$plugin_name
+  git rm -fq ./bundle/$plugin_name
+  rm -rf .git/modules/bundle/$plugin_name ./bundle/$plugin_name
   echo Removed $plugin_name.
 done
