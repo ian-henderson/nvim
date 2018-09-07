@@ -12,15 +12,19 @@ while (( $# > 0 )); do
   case $opt in
     install|i)
       ./scripts/install.sh $@
+      exit 0
       ;;
     uninstall|un)
       ./scripts/uninstall.sh $@
+      exit 0
       ;;
     list|ls)
       ./scripts/list.sh
+      exit 0
       ;;
     update|up)
       ./scripts/update.sh $@
+      exit 0
       ;;
     *)
       ./scripts/cli_description.sh
@@ -28,5 +32,3 @@ while (( $# > 0 )); do
       ;;
   esac
 done
-
-exit 0

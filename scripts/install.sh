@@ -19,6 +19,6 @@ if $invalid_git_url; then
 fi
 
 for url in $@; do
-  plugin_name=$(basename -- $url .git)
+  plugin_name=$(basename $url .git)
   git submodule add $url ./bundle/$plugin_name
 done
