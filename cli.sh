@@ -10,6 +10,10 @@ while (( $# > 0 )); do
   shift
 
   case $opt in
+    bootstrap|boot)
+      ./scripts/bootstrap.sh
+      exit 0
+      ;;
     install|i)
       ./scripts/install.sh $@
       exit 0
