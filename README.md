@@ -15,7 +15,7 @@ Alternatively, you can install the submodules after doing a basic git clone into
   mkdir ~/.config;
   git clone https://github.com/ian-henderson/nvim.git ~/.config/nvim;
   cd ~/.config/nvim;
-  ./cli.sh bootstrap|boot;
+  ./cli.sh bootstrap;
 ```
 
 ## Current Plugins
@@ -42,27 +42,27 @@ Alternatively, you can install the submodules after doing a basic git clone into
 #### Adding one or more plugins
 
 ```bash
-./cli.sh install|i [<plugin-git-url>...];
+./cli.sh install [<plugin-git-url>...];
 ```
 
 #### Listing plugins
 
 ```bash
-./cli.sh list|ls;
+./cli.sh list;
 ```
 
 #### Removing one or more plugins
 
 ```bash
-./cli.sh uninstall|un [<plugin>...];
+./cli.sh uninstall [<plugin>...];
 ```
 
 #### Updating Plugins
 
 ```bash
 # Update all plugins
-./cli.sh update|up;
+./cli.sh update;
 
 # Update specific plugins
-./cli.sh update|up [<plugin>...];
+./cli.sh update [<plugin>...];
 ```
