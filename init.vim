@@ -38,9 +38,6 @@
     nnoremap <leader>an :ALENextWrap<cr>
     nnoremap <leader>ap :ALEPreviousWrap<cr>
 
-" auto-pairs
-  let g:AutoPairsFlyMode = 1
-
 " ctrlp
   let g:ctrlp_map = '<c-p>'
   let g:ctrlp_cmd = 'CtrlP'
@@ -61,13 +58,16 @@
   let g:closetag_filenames = '*.html,*.js,*.php'
 
 " vim-colors-solarized
-  let g:solarized_italic=1
+  let g:solarized_italic = 1
   call togglebg#map("<F5>")
 
 " vim-gitgutter
   set updatetime=100
   nmap ]h <Plug>GitGutterNextHunk
   nmap [h <Plug>GitGutterPrevHunk<Paste>
+
+" vim-javascript
+  let g:javascript_plugin_flow = 1
 
 " vim-jsx
   let g:jsx_ext_required = 0
