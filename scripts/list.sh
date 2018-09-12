@@ -8,5 +8,7 @@ fi
 plugins=$(git config --name-only --get-regexp submodule.bundle/*)
 
 for plugin in $plugins; do
-  basename $plugin .url
-done | sort
+  file=$(basename $plugin)
+  file_name="${file%.*}"
+  echo $file_name
+done | uniq | sort

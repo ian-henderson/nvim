@@ -5,8 +5,17 @@ My personal NeoVim directory. Plugins are added to the runtime path via [vim-pat
 ## Installation
 
 ```bash
-  mkdir -p ~/.config;
+  mkdir ~/.config;
   git clone --recurse-submodules https://github.com/ian-henderson/nvim.git ~/.config/nvim;
+```
+
+Alternatively, you can install the submodules after doing a basic git clone into your nvim directory.
+
+```bash
+  mkdir ~/.config;
+  git clone https://github.com/ian-henderson/nvim.git ~/.config/nvim;
+  cd ~/.config/nvim;
+  ./cli.sh bootstrap|boot;
 ```
 
 ## Current Plugins
@@ -33,27 +42,27 @@ My personal NeoVim directory. Plugins are added to the runtime path via [vim-pat
 #### Adding one or more plugins
 
 ```bash
-./cli.sh install [<plugin-git-url>...]
+./cli.sh install|i [<plugin-git-url>...];
 ```
 
 #### Listing plugins
 
 ```bash
-./cli.sh list
+./cli.sh list|ls;
 ```
 
 #### Removing one or more plugins
 
 ```bash
-./cli.sh uninstall [<plugin>...]
+./cli.sh uninstall|un [<plugin>...];
 ```
 
 #### Updating Plugins
 
 ```bash
 # Update all plugins
-./cli.sh update
+./cli.sh update|up;
 
 # Update specific plugins
-./cli.sh update [<plugin>...]
+./cli.sh update|up [<plugin>...];
 ```
