@@ -9,7 +9,7 @@ for plugin_name in $@; do
 
   if [ ! plugin_url ]; then
     echo $plugin_name not found.
-    plugin_not_found=true
+    $plugin_not_found=true
   fi
 done
 
@@ -20,7 +20,7 @@ fi
 plugin_paths=""
 
 for plugin_name in $@; do
-  plugin_paths+="./bundle/$plugin_name "
+  $plugin_paths+="./bundle/$plugin_name "
 done
 
 git submodule update --force --recursive --remote $plugin_paths
