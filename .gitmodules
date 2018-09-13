@@ -46,3 +46,6 @@
 [submodule "bundle/typescript-vim"]
 	path = bundle/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "bundle/vim-flow"]
+	path = bundle/vim-flow
+	url = https://github.com/flowtype/vim-flow.git

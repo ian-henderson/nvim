@@ -7,7 +7,6 @@
 " ------------------------------------------------------------------------------
 " Vim:
 " ------------------------------------------------------------------------------
-
   filetype plugin indent on
   syntax on
 
@@ -18,13 +17,12 @@
 " ------------------------------------------------------------------------------
 " Pathogen:
 " ------------------------------------------------------------------------------
-
   execute pathogen#infect()
 
 " ALE (Asychronous Line Engine)
   " Limit linters used for JavaScript.
     let g:ale_linters = {
-    \  'javascript': ['eslint', 'flow']
+    \  'javascript': ['eslint', 'flow'],
     \}
     highlight clear ALEErrorSign " otherwise uses error bg color (typically red)
     highlight clear ALEWarningSign " otherwise uses error bg color (typically red)
@@ -61,6 +59,9 @@
   let g:solarized_italic = 1
   call togglebg#map("<F5>")
 
+" vim-flow
+  let g:flow#showquickfix = 0
+
 " vim-gitgutter
   set updatetime=100
   nmap ]h <Plug>GitGutterNextHunk
@@ -72,12 +73,12 @@
 " vim-jsx
   let g:jsx_ext_required = 0
   au BufNewFile,BufRead *-story.js set filetype=javascript.jsx
+  au BufNewFile,BufRead *.flow set filetype=javascript.jsx
 
 
 " ------------------------------------------------------------------------------
 " Indentation:
 " ------------------------------------------------------------------------------
-
   set breakindent linebreak
 
 " Tabstop (:help 'tabstop', option 2)
@@ -87,7 +88,6 @@
 " ------------------------------------------------------------------------------
 " Interface:
 " ------------------------------------------------------------------------------
-
   let &showbreak='+++ '
   set background=dark cursorline mouse=a noshowcmd number relativenumber
   colorscheme solarized
@@ -115,6 +115,5 @@
 " ------------------------------------------------------------------------------
 " Search:
 " ------------------------------------------------------------------------------
-
   set incsearch ignorecase smartcase path+=**
   set wildmenu wildignorecase wildignore+=*/tmp/*,*/node_modules/*,*.so,*.swp,*.zip
