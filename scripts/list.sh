@@ -5,7 +5,7 @@ if [ $# -gt 0 ]; then
   exit 1
 fi
 
-plugins=$(git config --name-only --get-regexp submodule.bundle/*)
+plugins=$(git -C $NVIM_DIR config --name-only --get-regexp submodule.bundle/*)
 
 for plugin in $plugins; do
   file=$(basename $plugin)

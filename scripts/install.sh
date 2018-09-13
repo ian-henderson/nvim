@@ -20,5 +20,5 @@ fi
 
 for url in $@; do
   plugin_name=$(basename $url .git)
-  git submodule add $url ./bundle/$plugin_name
+  git -C $NVIM_DIR submodule add $url $NVIM_DIR/bundle/$plugin_name
 done

@@ -8,7 +8,7 @@ fi
 plugin_not_found=false
 
 for plugin_name in $@; do
-  plugin_url=$(git config --get submodule.bundle/$plugin_name.url)
+  plugin_url=$(git -C $NVIM_DIR config --get submodule.bundle/$plugin_name.url)
 
   if [ ! $plugin_url ]; then
     echo $plugin_name not found.
@@ -21,8 +21,9 @@ if $plugin_not_found; then
 fi
 
 for plugin_name in $@; do
-  git config --remove-section submodule.bundle/$plugin_name
-  git rm -fq ./bundle/$plugin_name
-  rm -rf .git/modules/bundle/$plugin_name ./bundle/$plugin_name
+  git -C $NVIM_DIR config --remove-section submodule.bundle/$plugin_name
+  git -C $NVIM_DIR rm -fq ./bundle/$plugin_name
+  rm -rf $NVIM_DIR/.git/modules/bundle/$plugin_name
+  rm -rf $NVIM_DIR/bundle/$plugin_name
   echo Removed $plugin_name.
 done

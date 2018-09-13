@@ -5,7 +5,7 @@
 plugin_not_found=false
 
 for plugin_name in $@; do
-  plugin_url=$(git config --get submodule.bundle/$plugin_name.url)
+  plugin_url=$(git -C $NVIM_DIR config --get submodule.bundle/$plugin_name.url)
 
   if [ ! plugin_url ]; then
     echo $plugin_name not found.
@@ -20,7 +20,7 @@ fi
 plugin_paths=""
 
 for plugin_name in $@; do
-  $plugin_paths+="./bundle/$plugin_name "
+  $plugin_paths+="$NVIM_DIR/bundle/$plugin_name "
 done
 
-git submodule update --force --recursive --remote $plugin_paths
+git -C $NVIM_DIR submodule update --force --recursive --remote $plugin_paths

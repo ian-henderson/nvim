@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ $# -eq 0 ]; then
-  ./scripts/cli_description.sh
+  $NVIM_DIR/scripts/cli_description.sh
   exit 1
 fi
 
@@ -11,27 +11,27 @@ while (( $# > 0 )); do
 
   case $opt in
     bootstrap|boot)
-      ./scripts/bootstrap.sh
+      $NVIM_DIR/scripts/bootstrap.sh
       exit 0
       ;;
     install|i)
-      ./scripts/install.sh $@
+      $NVIM_DIR/scripts/install.sh $@
       exit 0
       ;;
     uninstall|un)
-      ./scripts/uninstall.sh $@
+      $NVIM_DIR/scripts/uninstall.sh $@
       exit 0
       ;;
     list|ls)
-      ./scripts/list.sh
+      $NVIM_DIR/scripts/list.sh
       exit 0
       ;;
     update|up)
-      ./scripts/update.sh $@
+      $NVIM_DIR/scripts/update.sh $@
       exit 0
       ;;
     *)
-      ./scripts/cli_description.sh
+      $NVIM_DIR/scripts/cli_description.sh
       exit 1
       ;;
   esac

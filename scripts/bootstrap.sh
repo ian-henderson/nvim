@@ -1,4 +1,4 @@
 #!/bin/bash
 
-git submodule init
-git submodule update
+git -C $NVIM_DIR submodule init
+git -C $NVIM_DIR submodule update
