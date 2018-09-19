@@ -24,6 +24,9 @@
     let g:ale_linters = {
     \  'javascript': ['eslint', 'flow'],
     \}
+    let b:ale_fixers = {
+		\  'javascript': ['prettier', 'eslint'],
+    \}
     highlight clear ALEErrorSign " otherwise uses error bg color (typically red)
     highlight clear ALEWarningSign " otherwise uses error bg color (typically red)
     let g:ale_sign_error = '!' " could use emoji
