@@ -1,11 +1,13 @@
 #!/bin/bash
 
-if [ $# -eq 0 ]; then
+if [ $# -eq 0 ]
+then
   $NVIM_DIR/scripts/cli_description.sh
   exit 1
 fi
 
-while (( $# > 0 )); do
+while [ $# > 0 ]
+do
   opt=$1
   shift
 
