@@ -6,21 +6,13 @@ then
   exit 1
 fi
 
-plugin_not_found=false
+source ./scripts/validate_plugins.sh
 
-for plugin_name in $@
-do
-  plugin_url=$(git -C $NVIM_DIR config --get submodule.bundle/$plugin_name.url)
+invalid_args=$(validate_plugins $@)
 
-  if [ ! $plugin_url ]
-  then
-    echo $plugin_name not found.
-    plugin_not_found=true
-  fi
-done
-
-if $plugin_not_found
+if [ $? -ne 0 ]
 then
+  echo invalid args: $invalid_args
   exit 1
 fi
 

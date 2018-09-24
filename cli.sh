@@ -6,7 +6,7 @@ then
   exit 1
 fi
 
-while [ $# > 0 ]
+while (( $# > 0 ))
 do
   opt=$1
   shift
