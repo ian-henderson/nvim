@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo -e "\nUsage: <command>\n"
+echo -e "\nUsage: ./cli.sh <command>\n"
 echo -e "where <command> is one of:"
 
 accepted_args=( install i uninstall un list ls update up )
