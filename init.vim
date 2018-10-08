@@ -37,6 +37,9 @@
   nnoremap <leader>an :ALENextWrap<cr>
   nnoremap <leader>ap :ALEPreviousWrap<cr>
 
+" auto-pairs
+  let g:AutoPairsFlyMode = 0
+
 " ctrlp
   let g:ctrlp_map = '<c-p>'
   let g:ctrlp_cmd = 'CtrlP'
@@ -78,21 +81,21 @@
 
 
 " ------------------------------------------------------------------------------
-" Indentation:
-" ------------------------------------------------------------------------------
-  set breakindent linebreak
-
-" Tabstop (:help 'tabstop', option 2)
-  set expandtab shiftwidth=2 tabstop=2
-
-
-" ------------------------------------------------------------------------------
 " Interface:
 " ------------------------------------------------------------------------------
   let &showbreak='+++ '
   set background=dark cursorline mouse=a noshowcmd number relativenumber
   colorscheme solarized
   highlight clear SignColumn
+
+
+" ------------------------------------------------------------------------------
+" Indentation:
+" ------------------------------------------------------------------------------
+  set breakindent linebreak
+
+" Tabstop (:help 'tabstop', option 2)
+  set expandtab shiftwidth=2 tabstop=2
 
 
 " ------------------------------------------------------------------------------
@@ -117,4 +120,4 @@
 " Search:
 " ------------------------------------------------------------------------------
   set incsearch ignorecase smartcase path+=**
-  set wildmenu wildignorecase wildignore+=*/tmp/*,*/node_modules/*,*.so,*.swp,*.zip
+  set wildmenu wildignorecase wildignore+=*/tmp/*,*/cache/*,*/node_modules/*,*.so,*.swp,*.zip
