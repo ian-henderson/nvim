@@ -37,6 +37,7 @@ Alternatively, you can install the submodules after doing a basic git clone into
 * [vim-javascript](https://github.com/pangloss/vim-javascript)
 * [vim-jsx](https://github.com/mxw/vim-jsx)
 * [vim-sensible](https://github.com/tpope/vim-sensible)
+* [vim-startify](https://github.com/mhinz/vim-startify)
 
 ### Plugin CLI
 
