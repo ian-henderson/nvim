@@ -7,91 +7,94 @@
 " ------------------------------------------------------------------------------
 " Vim:
 " ------------------------------------------------------------------------------
-  filetype plugin indent on
-  syntax on
+filetype plugin indent on
+syntax on
 
 " Removes trailing whitespace on save
-  autocmd BufWritePre * %s/\s\+$//e
+autocmd BufWritePre * %s/\s\+$//e
 
 
 " ------------------------------------------------------------------------------
 " Pathogen:
 " ------------------------------------------------------------------------------
-  execute pathogen#infect()
+execute pathogen#infect()
 
 " ALE (Asychronous Line Engine)
-  highlight clear ALEErrorSign " otherwise uses error bg color (typically red)
-  highlight clear ALEWarningSign " otherwise uses error bg color (typically red)
-  let g:ale_completion_enabled = 1
-  let g:ale_echo_msg_format = '%linter%: %s'
-  let b:ale_fixers = {
-  \  'javascript': ['prettier', 'eslint'],
-  \}
-  let g:ale_linters = {
-  \  'javascript': ['eslint', 'flow'],
-  \}
-  let g:ale_sign_error = '!' " could use emoji
-  let g:ale_sign_warning = '?' " could use emoji
-  let g:ale_statusline_format = ['X %d', '? %d', '']
-  nnoremap <leader>af :ALEFix<cr>
-  nnoremap <leader>an :ALENextWrap<cr>
-  nnoremap <leader>ap :ALEPreviousWrap<cr>
+highlight clear ALEErrorSign " otherwise uses error bg color (typically red)
+highlight clear ALEWarningSign " otherwise uses error bg color (typically red)
+let g:ale_completion_enabled = 1
+let g:ale_echo_msg_format = '%linter%: %s'
+let b:ale_fixers = {
+\  'javascript': ['prettier', 'eslint'],
+\}
+let g:ale_linters = {
+\  'javascript': ['eslint', 'flow'],
+\}
+let g:ale_sign_error = '!' " could use emoji
+let g:ale_sign_warning = '?' " could use emoji
+let g:ale_statusline_format = ['X %d', '? %d', '']
+nnoremap <leader>af :ALEFix<cr>
+nnoremap <leader>an :ALENextWrap<cr>
+nnoremap <leader>ap :ALEPreviousWrap<cr>
 
 " auto-pairs
-  let g:AutoPairsFlyMode = 0
+let g:AutoPairsFlyMode = 0
 
 " ctrlp
-  let g:ctrlp_map = '<c-p>'
-  let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
 " nerdtree
   " opens nerdtree if no file is specified
     " autocmd StdinReadPre * let s:std_in = 1
     " autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
   " opens nerdtree if directory is opened
-    autocmd StdinReadPre * let s:std_in = 1
-    autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+  autocmd StdinReadPre * let s:std_in = 1
+  autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
   " closes vim if only window left open is nerdtree
-    autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+  autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
   " mapping
-    map <C-n> :NERDTreeToggle<CR>
+  map <C-n> :NERDTreeToggle<CR>
 
 " vim-closetag
-  let g:closetag_filenames = '*.html,*.js,*.php'
+let g:closetag_filenames = '*.html,*.js,*.php'
 
 " vim-flow
-  let g:flow#showquickfix = 0
+let g:flow#showquickfix = 0
 
 " vim-gitgutter
-  set updatetime=100
-  nmap ]h <Plug>GitGutterNextHunk
-  nmap [h <Plug>GitGutterPrevHunk<Paste>
+set updatetime=100
+nmap ]h <Plug>GitGutterNextHunk
+nmap [h <Plug>GitGutterPrevHunk<Paste>
 
 " vim-javascript
-  let g:javascript_plugin_flow = 1
+let g:javascript_plugin_flow = 1
 
 " vim-jsx
-  let g:jsx_ext_required = 0
-  au BufNewFile,BufRead *-story.js set filetype=javascript.jsx
-  au BufNewFile,BufRead *.flow set filetype=javascript.jsx
+let g:jsx_ext_required = 0
+au BufNewFile,BufRead *-story.js set filetype=javascript.jsx
+au BufNewFile,BufRead *.flow set filetype=javascript.jsx
 
 
 " ------------------------------------------------------------------------------
 " Interface:
 " ------------------------------------------------------------------------------
-  let &showbreak='+++ '
-  set background=dark cursorline mouse=a noshowcmd number relativenumber
-  colorscheme gruvbox
-  highlight clear SignColumn
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
+let &showbreak='+++ '
+set background=dark cursorline mouse=a noshowcmd number relativenumber
+highlight clear SignColumn
 
 
 " ------------------------------------------------------------------------------
 " Indentation:
 " ------------------------------------------------------------------------------
-  set breakindent linebreak
+set breakindent linebreak
 
 " Tabstop (:help 'tabstop', option 2)
-  set expandtab shiftwidth=2 tabstop=2
+set expandtab shiftwidth=2 tabstop=2
 
 
 " ------------------------------------------------------------------------------
@@ -99,21 +102,21 @@
 " ------------------------------------------------------------------------------
 
 " Reloads Vim config files
-  nnoremap <Leader>s :source $MYVIMRC<CR>
+nnoremap <Leader>s :source $MYVIMRC<CR>
 
 " <esc> clears text highlighted by search
-  nnoremap <esc> :noh<return><esc>
+nnoremap <esc> :noh<return><esc>
 
 " Jumps between buffers
-  nnoremap gb :ls<CR>:b<Space>
+nnoremap gb :ls<CR>:b<Space>
 
 " Moves the cursor through soft-wrapped lines
-  nnoremap <expr> j v:count ? 'j' : 'gj'
-  nnoremap <expr> k v:count ? 'k' : 'gk'
+nnoremap <expr> j v:count ? 'j' : 'gj'
+nnoremap <expr> k v:count ? 'k' : 'gk'
 
 
 " ------------------------------------------------------------------------------
 " Search:
 " ------------------------------------------------------------------------------
-  set incsearch ignorecase smartcase path+=**
-  set wildmenu wildignorecase wildignore+=*/tmp/*,*/cache/*,*/node_modules/*,*.so,*.swp,*.zip
+set incsearch ignorecase smartcase path+=**
+set wildmenu wildignorecase wildignore+=*/tmp/*,*/cache/*,*/node_modules/*,*.so,*.swp,*.zip
