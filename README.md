@@ -22,8 +22,8 @@ Alternatively, you can install the submodules after doing a basic git clone into
 
 * [ale](https://github.com/w0rp/ale)
 * [auto-pairs](https://github.com/jiangmiao/auto-pairs)
-* [base16-vim](https://github.com/chriskempson/base16-vim)
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
+* [gruvbox](https://github.com/morhetz/gruvbox)
 * [nerdtree](https://github.com/scrooloose/nerdtree)
 * [supertab](https://github.com/ervandew/supertab)
 * [typescript-vim](https://github.com/leafgarland/typescript-vim)
@@ -38,8 +38,6 @@ Alternatively, you can install the submodules after doing a basic git clone into
 * [vim-jsx](https://github.com/mxw/vim-jsx)
 * [vim-sensible](https://github.com/tpope/vim-sensible)
 * [vim-startify](https://github.com/mhinz/vim-startify)
-
-### [Base16 Shell Integration](https://github.com/chriskempson/base16-shell)
 
 ### Plugin CLI
 

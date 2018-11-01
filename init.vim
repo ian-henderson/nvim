@@ -74,9 +74,10 @@ au BufNewFile,BufRead *.flow set filetype=javascript.jsx
 "-------------------------------------------------------------------------------
 " Interface:
 "-------------------------------------------------------------------------------
-if filereadable(expand("~/.vimrc_background"))
-  let base16colorspace=256
-  source ~/.vimrc_background
+set background=dark
+colorscheme gruvbox
+if (has("termguicolors"))
+  set termguicolors
 endif
 let &showbreak='+++ '
 set background=dark cursorline mouse=a noshowcmd number relativenumber
