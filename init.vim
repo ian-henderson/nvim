@@ -1,22 +1,20 @@
-" ------------------------------------------------------------------------------
+"-------------------------------------------------------------------------------
 " File:   $HOME/.config/nvim/init.vim
 " Author: Ian Henderson
-" ------------------------------------------------------------------------------
+"-------------------------------------------------------------------------------
 
 
-" ------------------------------------------------------------------------------
+"-------------------------------------------------------------------------------
 " Vim:
-" ------------------------------------------------------------------------------
+"-------------------------------------------------------------------------------
 filetype plugin indent on
 syntax on
-
-" Removes trailing whitespace on save
-autocmd BufWritePre * %s/\s\+$//e
+autocmd BufWritePre * %s/\s\+$//e " Removes trailing whitespace on save
 
 
-" ------------------------------------------------------------------------------
-" Pathogen:
-" ------------------------------------------------------------------------------
+"-------------------------------------------------------------------------------
+" Plugins:
+"-------------------------------------------------------------------------------
 execute pathogen#infect()
 
 " ALE (Asychronous Line Engine)
@@ -45,9 +43,6 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
 " nerdtree
-  " opens nerdtree if no file is specified
-    " autocmd StdinReadPre * let s:std_in = 1
-    " autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
   " opens nerdtree if directory is opened
   autocmd StdinReadPre * let s:std_in = 1
   autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
@@ -76,9 +71,9 @@ au BufNewFile,BufRead *-story.js set filetype=javascript.jsx
 au BufNewFile,BufRead *.flow set filetype=javascript.jsx
 
 
-" ------------------------------------------------------------------------------
+"-------------------------------------------------------------------------------
 " Interface:
-" ------------------------------------------------------------------------------
+"-------------------------------------------------------------------------------
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
   source ~/.vimrc_background
@@ -88,35 +83,29 @@ set background=dark cursorline mouse=a noshowcmd number relativenumber
 highlight clear SignColumn
 
 
-" ------------------------------------------------------------------------------
+"-------------------------------------------------------------------------------
 " Indentation:
-" ------------------------------------------------------------------------------
+"-------------------------------------------------------------------------------
 set breakindent linebreak
-
-" Tabstop (:help 'tabstop', option 2)
-set expandtab shiftwidth=2 tabstop=2
+set expandtab shiftwidth=2 tabstop=2 " Tabstop (:help 'tabstop', option 2)
 
 
-" ------------------------------------------------------------------------------
+"-------------------------------------------------------------------------------
 " Mappings:
-" ------------------------------------------------------------------------------
-
+"-------------------------------------------------------------------------------
 " Reloads Vim config files
 nnoremap <Leader>s :source $MYVIMRC<CR>
-
 " <esc> clears text highlighted by search
 nnoremap <esc> :noh<return><esc>
-
-" Jumps between buffers
+" Go to buffer
 nnoremap gb :ls<CR>:b<Space>
-
 " Moves the cursor through soft-wrapped lines
 nnoremap <expr> j v:count ? 'j' : 'gj'
 nnoremap <expr> k v:count ? 'k' : 'gk'
 
 
-" ------------------------------------------------------------------------------
+"-------------------------------------------------------------------------------
 " Search:
-" ------------------------------------------------------------------------------
+"-------------------------------------------------------------------------------
 set incsearch ignorecase smartcase path+=**
 set wildmenu wildignorecase wildignore+=*/tmp/*,*/cache/*,*/node_modules/*,*.so,*.swp,*.zip
