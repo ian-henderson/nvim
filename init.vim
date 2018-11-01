@@ -28,8 +28,8 @@ let b:ale_fixers = {
 let g:ale_linters = {
 \  'javascript': ['eslint', 'flow'],
 \}
-let g:ale_sign_error = '!' " could use emoji
-let g:ale_sign_warning = '?' " could use emoji
+let g:ale_sign_error = '😱'
+let g:ale_sign_warning = '🤨 '
 let g:ale_statusline_format = ['X %d', '? %d', '']
 nnoremap <leader>af :ALEFix<cr>
 nnoremap <leader>an :ALENextWrap<cr>
@@ -41,6 +41,11 @@ let g:AutoPairsFlyMode = 0
 " ctrlp
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+
+" gruvbox
+let g:gruvbox_sign_column = 'bg0'
+let g:gruvbox_bold = 0
+let g:gruvbox_italic = 1
 
 " nerdtree
   " opens nerdtree if directory is opened
@@ -81,7 +86,6 @@ if (has("termguicolors"))
 endif
 let &showbreak='+++ '
 set background=dark cursorline mouse=a noshowcmd number relativenumber
-highlight clear SignColumn
 
 
 "-------------------------------------------------------------------------------
