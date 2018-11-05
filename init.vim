@@ -51,16 +51,6 @@ let g:ctrlp_cmd = 'CtrlP'
   " mapping
   map <C-n> :NERDTreeToggle<CR>
 
-" papercolor-theme
-let g:PaperColor_Theme_Options = {
-  \   'theme': {
-  \     'default': {
-  \       'allow_bold': 1,
-  \       'allow_italic': 0
-  \     }
-  \   }
-  \ }
-
 " vim-closetag
 let g:closetag_filenames = '*.html,*.js,*.php'
 
@@ -85,12 +75,12 @@ au BufNewFile,BufRead *.flow set filetype=javascript.jsx
 " Interface:
 "-------------------------------------------------------------------------------
 set background=dark
-colorscheme PaperColor
+colorscheme night-owl
 if (has("termguicolors"))
   set termguicolors
 endif
 let &showbreak='+++ '
-set background=dark cursorline mouse=a noshowcmd number relativenumber
+set background=dark mouse=a noshowcmd number relativenumber
 
 
 "-------------------------------------------------------------------------------

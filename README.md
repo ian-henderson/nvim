@@ -24,7 +24,7 @@ Alternatively, you can install the submodules after doing a basic git clone into
 * [auto-pairs](https://github.com/jiangmiao/auto-pairs)
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 * [nerdtree](https://github.com/scrooloose/nerdtree)
-* [papercolor-theme](https://github.com/NLKNguyen/papercolor-theme)
+* [night-owl.vim](https://github.com/haishanh/night-owl.vim)
 * [supertab](https://github.com/ervandew/supertab)
 * [typescript-vim](https://github.com/leafgarland/typescript-vim)
 * [vim-airline](https://github.com/vim-airline/vim-airline)
