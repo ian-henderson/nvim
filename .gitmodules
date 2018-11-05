@@ -49,6 +49,3 @@
 [submodule "bundle/vim-startify"]
 	path = bundle/vim-startify
 	url = https://github.com/mhinz/vim-startify.git
-[submodule "bundle/night-owl.vim"]
-	path = bundle/night-owl.vim
-	url = https://github.com/haishanh/night-owl.vim.git
