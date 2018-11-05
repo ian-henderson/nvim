@@ -42,11 +42,6 @@ let g:AutoPairsFlyMode = 0
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
-" gruvbox
-let g:gruvbox_sign_column = 'bg0'
-let g:gruvbox_bold = 0
-let g:gruvbox_italic = 1
-
 " nerdtree
   " opens nerdtree if directory is opened
   autocmd StdinReadPre * let s:std_in = 1
@@ -55,6 +50,16 @@ let g:gruvbox_italic = 1
   autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
   " mapping
   map <C-n> :NERDTreeToggle<CR>
+
+" papercolor-theme
+let g:PaperColor_Theme_Options = {
+  \   'theme': {
+  \     'default': {
+  \       'allow_bold': 1,
+  \       'allow_italic': 0
+  \     }
+  \   }
+  \ }
 
 " vim-closetag
 let g:closetag_filenames = '*.html,*.js,*.php'
@@ -80,7 +85,7 @@ au BufNewFile,BufRead *.flow set filetype=javascript.jsx
 " Interface:
 "-------------------------------------------------------------------------------
 set background=dark
-colorscheme gruvbox
+colorscheme PaperColor
 if (has("termguicolors"))
   set termguicolors
 endif
