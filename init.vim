@@ -75,7 +75,7 @@ au BufNewFile,BufRead *.flow set filetype=javascript.jsx
 " Interface:
 "-------------------------------------------------------------------------------
 set background=dark
-colorscheme dracula
+colorscheme hybrid
 if (has("termguicolors"))
   set termguicolors
 endif
