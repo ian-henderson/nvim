@@ -23,6 +23,7 @@ Alternatively, you can install the submodules after doing a basic git clone into
 * [ale](https://github.com/w0rp/ale)
 * [auto-pairs](https://github.com/jiangmiao/auto-pairs)
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
+* [goyo](https://github.com/junegunn/goyo.vim)
 * [nerdtree](https://github.com/scrooloose/nerdtree)
 * [supertab](https://github.com/ervandew/supertab)
 * [vim-airline](https://github.com/vim-airline/vim-airline)
