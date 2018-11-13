@@ -25,7 +25,6 @@ Alternatively, you can install the submodules after doing a basic git clone into
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 * [nerdtree](https://github.com/scrooloose/nerdtree)
 * [supertab](https://github.com/ervandew/supertab)
-* [typescript-vim](https://github.com/leafgarland/typescript-vim)
 * [vim-airline](https://github.com/vim-airline/vim-airline)
 * [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
 * [vim-closetag](https://github.com/alvan/vim-closetag)

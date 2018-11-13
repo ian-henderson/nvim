@@ -49,3 +49,6 @@
 [submodule "bundle/vim-flow"]
   path = bundle/vim-flow
   url = https://github.com/flowtype/vim-flow.git
+[submodule "bundle/goyo.vim"]
+	path = bundle/goyo.vim
+	url = https://github.com/junegunn/goyo.vim.git
