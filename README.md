@@ -18,15 +18,17 @@ Alternatively, you can install the submodules after doing a basic git clone into
   ./cli.sh bootstrap;
 ```
 
-## Current Plugins
+## Plugins
 
 * [ale](https://github.com/w0rp/ale)
 * [auto-pairs](https://github.com/jiangmiao/auto-pairs)
+* [badwolf](https://github.com/sjl/badwolf)
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 * [goyo](https://github.com/junegunn/goyo.vim)
 * [gruvbox](https://github.com/morhetz/gruvbox)
 * [nerdtree](https://github.com/scrooloose/nerdtree)
 * [supertab](https://github.com/ervandew/supertab)
+* [tender](https://github.com/jacoborus/tender.vim)
 * [vim-airline](https://github.com/vim-airline/vim-airline)
 * [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
 * [vim-closetag](https://github.com/alvan/vim-closetag)

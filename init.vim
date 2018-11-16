@@ -46,11 +46,6 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:goyo_linenr = 1
 nnoremap <Leader>g :Goyo<CR>
 
-" gruvbox
-let g:gruvbox_bold = 0
-let g:gruvbox_italic = 0
-let g:gruvbox_sign_column = 'bg0'
-
 " nerdtree
 " opens nerdtree if directory is opened
 autocmd StdinReadPre * let s:std_in = 1
@@ -79,12 +74,21 @@ let g:jsx_ext_required = 0
 au BufNewFile,BufRead *-story.js set filetype=javascript.jsx
 au BufNewFile,BufRead *.flow set filetype=javascript.jsx
 
+" Color Scheme Plugins
+" gruvbox
+let g:gruvbox_bold = 0
+let g:gruvbox_italic = 0
+let g:gruvbox_sign_column = 'bg0'
+
 
 "-------------------------------------------------------------------------------
 " Interface:
 "-------------------------------------------------------------------------------
+if (has("termguicolors"))
+ set termguicolors
+endif
 set background=dark
-colorscheme gruvbox
+colorscheme tender
 let &showbreak='+++ '
 set background=dark cursorline mouse=a noshowcmd number relativenumber
 
