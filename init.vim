@@ -42,14 +42,23 @@ let g:AutoPairsFlyMode = 0
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
+" goyo
+let g:goyo_linenr = 1
+nnoremap <Leader>g :Goyo<CR>
+
+" gruvbox
+let g:gruvbox_bold = 0
+let g:gruvbox_italic = 0
+let g:gruvbox_sign_column = 'bg0'
+
 " nerdtree
-  " opens nerdtree if directory is opened
-  autocmd StdinReadPre * let s:std_in = 1
-  autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
-  " closes vim if only window left open is nerdtree
-  autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-  " mapping
-  map <C-n> :NERDTreeToggle<CR>
+" opens nerdtree if directory is opened
+autocmd StdinReadPre * let s:std_in = 1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+" closes vim if only window left open is nerdtree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" mapping
+map <C-n> :NERDTreeToggle<CR>
 
 " vim-closetag
 let g:closetag_filenames = '*.html,*.js,*.php'
@@ -75,7 +84,7 @@ au BufNewFile,BufRead *.flow set filetype=javascript.jsx
 " Interface:
 "-------------------------------------------------------------------------------
 set background=dark
-colorscheme solarized
+colorscheme gruvbox
 let &showbreak='+++ '
 set background=dark cursorline mouse=a noshowcmd number relativenumber
 
@@ -99,6 +108,9 @@ nnoremap gb :ls<CR>:b<Space>
 " Moves the cursor through soft-wrapped lines
 nnoremap <expr> j v:count ? 'j' : 'gj'
 nnoremap <expr> k v:count ? 'k' : 'gk'
+" Toggles background
+call togglebg#map("<F5>")
+
 
 
 "-------------------------------------------------------------------------------
