@@ -28,8 +28,8 @@ let b:ale_fixers = {
 let g:ale_linters = {
 \  'javascript': ['eslint', 'flow'],
 \}
-let g:ale_sign_error = '😱'
-let g:ale_sign_warning = '🤨 '
+let g:ale_sign_error = '😱 '
+let g:ale_sign_warning = '🧐 '
 let g:ale_statusline_format = ['X %d', '? %d', '']
 nnoremap <leader>af :ALEFix<cr>
 nnoremap <leader>an :ALENextWrap<cr>
