@@ -24,6 +24,7 @@ Alternatively, you can install the submodules after doing a basic git clone into
 * [auto-pairs](https://github.com/jiangmiao/auto-pairs)
 * [badwolf](https://github.com/sjl/badwolf)
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
+* [dracula](https://github.com/dracula/vim.git)
 * [goyo](https://github.com/junegunn/goyo.vim)
 * [gruvbox](https://github.com/morhetz/gruvbox)
 * [nerdtree](https://github.com/scrooloose/nerdtree)
