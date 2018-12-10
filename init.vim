@@ -26,7 +26,7 @@ let b:ale_fixers = {
 \  'javascript': ['prettier', 'eslint'],
 \}
 let g:ale_linters = {
-\  'javascript': ['eslint', 'flow'],
+\  'javascript': ['eslint'],
 \}
 let g:ale_sign_error = '😱 '
 let g:ale_sign_warning = '🧐 '
