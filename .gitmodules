@@ -46,21 +46,9 @@
 [submodule "bundle/vim-colors-solarized"]
   path = bundle/vim-colors-solarized
   url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "bundle/vim-flow"]
-  path = bundle/vim-flow
-  url = https://github.com/flowtype/vim-flow.git
 [submodule "bundle/goyo.vim"]
 	path = bundle/goyo.vim
 	url = https://github.com/junegunn/goyo.vim.git
-[submodule "bundle/gruvbox"]
-	path = bundle/gruvbox
-	url = https://github.com/morhetz/gruvbox.git
-[submodule "bundle/badwolf"]
-	path = bundle/badwolf
-	url = https://github.com/sjl/badwolf.git
 [submodule "bundle/tender.vim"]
 	path = bundle/tender.vim
 	url = https://github.com/jacoborus/tender.vim.git
-[submodule "bundle/vim"]
-	path = bundle/vim
-	url = https://github.com/dracula/vim.git

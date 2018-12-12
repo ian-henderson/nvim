@@ -84,11 +84,8 @@ let g:gruvbox_sign_column = 'bg0'
 "-------------------------------------------------------------------------------
 " Interface:
 "-------------------------------------------------------------------------------
-if (has("termguicolors"))
- set termguicolors
-endif
 set background=dark
-colorscheme tender
+colorscheme solarized
 let &showbreak='+++ '
 set background=dark cursorline mouse=a noshowcmd number relativenumber
 
