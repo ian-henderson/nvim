@@ -52,3 +52,9 @@
 [submodule "bundle/tender.vim"]
 	path = bundle/tender.vim
 	url = https://github.com/jacoborus/tender.vim.git
+[submodule "bundle/jellybeans.vim"]
+	path = bundle/jellybeans.vim
+	url = https://github.com/nanotech/jellybeans.vim.git
+[submodule "bundle/onedark.vim"]
+	path = bundle/onedark.vim
+	url = https://github.com/joshdick/onedark.vim.git
