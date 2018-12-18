@@ -79,7 +79,7 @@ if (has("termguicolors"))
 endif
 colorscheme onedark
 let &showbreak='+++ '
-set background=dark cursorline mouse=a noshowcmd number relativenumber
+set background=dark cursorline mouse=a noshowcmd number relativenumber title
 
 
 "-------------------------------------------------------------------------------
