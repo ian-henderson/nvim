@@ -24,22 +24,18 @@ Alternatively, you can install the submodules after doing a basic git clone into
 * [auto-pairs](https://github.com/jiangmiao/auto-pairs)
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 * [goyo](https://github.com/junegunn/goyo.vim)
-* [jellybeans](https://github.com/nanotech/jellybeans.vim)
 * [onedark](https://github.com/joshdick/onedark.vim)
-* [nerdtree](https://github.com/scrooloose/nerdtree)
 * [supertab](https://github.com/ervandew/supertab)
 * [tender](https://github.com/jacoborus/tender.vim)
 * [vim-airline](https://github.com/vim-airline/vim-airline)
 * [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
 * [vim-closetag](https://github.com/alvan/vim-closetag)
-* [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)
 * [vim-fugitive](https://github.com/tpope/vim-fugitive)
 * [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 * [vim-graphql](https://github.com/jparise/vim-graphql)
 * [vim-javascript](https://github.com/pangloss/vim-javascript)
 * [vim-jsx](https://github.com/mxw/vim-jsx)
 * [vim-sensible](https://github.com/tpope/vim-sensible)
-* [vim-startify](https://github.com/mhinz/vim-startify)
 
 ### Plugin CLI
 

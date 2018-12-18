@@ -49,14 +49,9 @@ nnoremap <Leader>g :Goyo<CR>
 " onedark
 let g:onedark_terminal_italics = 1
 
-" nerdtree
-" opens nerdtree if directory is opened
-autocmd StdinReadPre * let s:std_in = 1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
-" closes vim if only window left open is nerdtree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-" mapping
-map <C-n> :NERDTreeToggle<CR>
+" vim-airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'jsformatter'
 
 " vim-closetag
 let g:closetag_filenames = '*.html,*.js,*.php'
@@ -106,9 +101,6 @@ nnoremap gb :ls<CR>:b<Space>
 " Moves the cursor through soft-wrapped lines
 nnoremap <expr> j v:count ? 'j' : 'gj'
 nnoremap <expr> k v:count ? 'k' : 'gk'
-" Toggles background
-call togglebg#map("<F5>")
-
 
 
 "-------------------------------------------------------------------------------
