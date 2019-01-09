@@ -77,7 +77,7 @@ set background=dark
 if (has("termguicolors"))
   set termguicolors
 endif
-colorscheme onedark
+colorscheme tender
 let &showbreak='+++ '
 set background=dark cursorline mouse=a noshowcmd number relativenumber title
 
