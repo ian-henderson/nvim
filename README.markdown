@@ -37,6 +37,7 @@ Alternatively, you can install the submodules after doing a basic git clone into
 * [vim-graphql](https://github.com/jparise/vim-graphql)
 * [vim-javascript](https://github.com/pangloss/vim-javascript)
 * [vim-jsx](https://github.com/mxw/vim-jsx)
+* [vim-sass-colors](https://github.com/shmargum/vim-sass-colors)
 * [vim-sensible](https://github.com/tpope/vim-sensible)
 * [vim-vinegar](https://github.com/tpope/vim-vinegar)
 
