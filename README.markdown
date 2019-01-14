@@ -39,6 +39,7 @@ Alternatively, you can install the submodules after doing a basic git clone into
 * [vim-jsx](https://github.com/mxw/vim-jsx)
 * [vim-sass-colors](https://github.com/shmargum/vim-sass-colors)
 * [vim-sensible](https://github.com/tpope/vim-sensible)
+* [vim-startify](https://github.com/mhinz/vim-startify)
 * [vim-vinegar](https://github.com/tpope/vim-vinegar)
 
 ### Plugin CLI
