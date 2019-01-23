@@ -60,6 +60,7 @@ let g:closetag_filenames = '*.html,*.js,*.php'
 set updatetime=100
 nmap ]h <Plug>GitGutterNextHunk
 nmap [h <Plug>GitGutterPrevHunk<Paste>
+let g:gitgutter_override_sign_column_highlight = 1
 
 " vim-javascript
 let g:javascript_plugin_flow = 1
@@ -77,7 +78,7 @@ set background=dark
 if (has("termguicolors"))
   set termguicolors
 endif
-colorscheme tender
+colorscheme night-owl
 let &showbreak='+++ '
 set background=dark cursorline mouse=a noshowcmd number relativenumber title
 

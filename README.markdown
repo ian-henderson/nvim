@@ -26,6 +26,8 @@ Alternatively, you can install the submodules after doing a basic git clone into
 * [auto-pairs](https://github.com/jiangmiao/auto-pairs)
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 * [goyo.vim](https://github.com/junegunn/goyo.vim)
+* [gruvbox](https://github.com/morhetz/gruvbox)
+* [night-owl.vim](https://github.com/haishanh/night-owl.vim)
 * [onedark.vim](https://github.com/joshdick/onedark.vim)
 * [supertab](https://github.com/ervandew/supertab)
 * [tender.vim](https://github.com/jacoborus/tender.vim)
