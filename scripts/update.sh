@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ./scripts/validate_plugins.sh
+source $NVIM_DIR/scripts/validate_plugins.sh
 
 invalid_args=$(validate_plugins $@)
 
