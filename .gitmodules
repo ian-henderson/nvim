@@ -61,3 +61,6 @@
 [submodule "bundle/night-owl.vim"]
 	path = bundle/night-owl.vim
 	url = https://github.com/haishanh/night-owl.vim.git
+[submodule "bundle/vim-monotone"]
+	path = bundle/vim-monotone
+	url = https://github.com/Lokaltog/vim-monotone.git

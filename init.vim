@@ -52,6 +52,7 @@ let g:onedark_terminal_italics = 1
 " vim-airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'jsformatter'
+let g:airline_theme = 'monochrome'
 
 " vim-closetag
 let g:closetag_filenames = '*.html,*.js,*.php'
@@ -70,6 +71,9 @@ let g:jsx_ext_required = 0
 au BufNewFile,BufRead *-story.js set filetype=javascript.jsx
 au BufNewFile,BufRead *.flow set filetype=javascript.jsx
 
+" vim-monotone
+" let g:monotone_color = [80, 58, 60]
+
 
 "-------------------------------------------------------------------------------
 " Interface:
@@ -78,7 +82,7 @@ set background=dark
 if (has("termguicolors"))
   set termguicolors
 endif
-colorscheme tender
+colorscheme monotone
 let &showbreak='+++ '
 set background=dark cursorline mouse=a noshowcmd number relativenumber title
 
