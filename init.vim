@@ -52,7 +52,6 @@ let g:onedark_terminal_italics = 1
 " vim-airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'jsformatter'
-let g:airline_theme = 'monochrome'
 
 " vim-closetag
 let g:closetag_filenames = '*.html,*.js,*.php'
@@ -82,7 +81,7 @@ set background=dark
 if (has("termguicolors"))
   set termguicolors
 endif
-colorscheme monotone
+colorscheme gruvbox
 let &showbreak='+++ '
 set background=dark cursorline mouse=a noshowcmd number relativenumber title
 
