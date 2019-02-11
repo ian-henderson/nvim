@@ -78,10 +78,7 @@ au BufNewFile,BufRead *.flow set filetype=javascript.jsx
 " Interface:
 "-------------------------------------------------------------------------------
 set background=dark
-if (has("termguicolors"))
-  set termguicolors
-endif
-colorscheme gruvbox
+colorscheme solarized
 let &showbreak='+++ '
 set background=dark cursorline mouse=a noshowcmd number relativenumber title
 

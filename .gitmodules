@@ -64,3 +64,6 @@
 [submodule "bundle/vim-monotone"]
 	path = bundle/vim-monotone
 	url = https://github.com/Lokaltog/vim-monotone.git
+[submodule "bundle/vim-colors-solarized"]
+	path = bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git

@@ -34,6 +34,7 @@ Alternatively, you can install the submodules after doing a basic git clone into
 * [vim-airline](https://github.com/vim-airline/vim-airline)
 * [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
 * [vim-closetag](https://github.com/alvan/vim-closetag)
+* [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)
 * [vim-fugitive](https://github.com/tpope/vim-fugitive)
 * [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 * [vim-graphql](https://github.com/jparise/vim-graphql)
