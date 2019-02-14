@@ -27,6 +27,7 @@ Alternatively, you can install the submodules after doing a basic git clone into
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 * [goyo.vim](https://github.com/junegunn/goyo.vim)
 * [gruvbox](https://github.com/morhetz/gruvbox)
+* [jsdoc-syntax](https://github.com/othree/jsdoc-syntax.vim)
 * [night-owl.vim](https://github.com/haishanh/night-owl.vim)
 * [onedark.vim](https://github.com/joshdick/onedark.vim)
 * [supertab](https://github.com/ervandew/supertab)
