@@ -78,9 +78,9 @@ au BufNewFile,BufRead *.flow set filetype=javascript.jsx
 " Interface:
 "-------------------------------------------------------------------------------
 set background=dark
-colorscheme solarized8
+colorscheme night-owl
 let &showbreak='+++ '
-set background=dark cursorline mouse=a noshowcmd number relativenumber
+set background=dark mouse=a noshowcmd number relativenumber
 set termguicolors title
 
 
