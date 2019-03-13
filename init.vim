@@ -78,7 +78,7 @@ au BufNewFile,BufRead *.flow set filetype=javascript.jsx
 " Interface:
 "-------------------------------------------------------------------------------
 set background=dark
-colorscheme night-owl
+colorscheme dracula
 let &showbreak='+++ '
 set background=dark mouse=a noshowcmd number relativenumber
 set termguicolors title
@@ -103,7 +103,8 @@ nnoremap gb :ls<CR>:b<Space>
 " Moves the cursor through soft-wrapped lines
 nnoremap <expr> j v:count ? 'j' : 'gj'
 nnoremap <expr> k v:count ? 'k' : 'gk'
-
+" Maps escape to Ctrl+\ Ctrl+n in terminal mode
+tnoremap <Esc> <C-\><C-n>
 
 "-------------------------------------------------------------------------------
 " Search:

@@ -25,6 +25,7 @@ Alternatively, you can install the submodules after doing a basic git clone into
 * [ale](https://github.com/w0rp/ale)
 * [auto-pairs](https://github.com/jiangmiao/auto-pairs)
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
+* [dracula](https://github.com/dracula/vim/tree/b7e11c087fe2a9e3023cdccf17985704e27b125d)
 * [goyo.vim](https://github.com/junegunn/goyo.vim)
 * [gruvbox](https://github.com/morhetz/gruvbox)
 * [jsdoc-syntax](https://github.com/othree/jsdoc-syntax.vim)
