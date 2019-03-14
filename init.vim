@@ -28,8 +28,8 @@ let b:ale_fixers = {
 let g:ale_linters = {
 \  'javascript': ['eslint'],
 \}
-let g:ale_sign_error = '😱 '
-let g:ale_sign_warning = '🧐 '
+let g:ale_sign_error = '!'
+let g:ale_sign_warning = '?'
 let g:ale_statusline_format = ['X %d', '? %d', '']
 nnoremap <leader>af :ALEFix<cr>
 nnoremap <leader>an :ALENextWrap<cr>
@@ -78,7 +78,7 @@ au BufNewFile,BufRead *.flow set filetype=javascript.jsx
 " Interface:
 "-------------------------------------------------------------------------------
 set background=dark
-colorscheme dracula
+colorscheme solarized8_flat
 let &showbreak='+++ '
 set background=dark mouse=a noshowcmd number relativenumber
 set termguicolors title
