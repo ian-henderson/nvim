@@ -27,11 +27,11 @@ Alternatively, you can install the submodules after doing a basic git clone into
 * [gruvbox](https://github.com/morhetz/gruvbox)
 * [hybrid](https://github.com/w0ng/vim-hybrid)
 * [monotone](https://github.com/Lokaltog/vim-monotone)
-* [night-owl.vim](https://github.com/haishanh/night-owl.vim)
+* [night-owl](https://github.com/haishanh/night-owl.vim)
 * [oceanic-next](https://github.com/mhartington/oceanic-next)
-* [onedark.vim](https://github.com/joshdick/onedark.vim)
+* [onedark](https://github.com/joshdick/onedark.vim)
 * [solarized8](https://github.com/lifepillar/vim-solarized8)
-* [tender.vim](https://github.com/jacoborus/tender.vim)
+* [tender](https://github.com/jacoborus/tender.vim)
 * [zenburn](https://github.com/jnurmine/Zenburn.git)
 
 ### Language
@@ -49,7 +49,7 @@ Alternatively, you can install the submodules after doing a basic git clone into
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 * [fugitive](https://github.com/tpope/vim-fugitive)
 * [gitgutter](https://github.com/airblade/vim-gitgutter)
-* [goyo.vim](https://github.com/junegunn/goyo.vim)
+* [goyo](https://github.com/junegunn/goyo.vim)
 * [sass-colors](https://github.com/shmargum/vim-sass-colors)
 * [sensible](https://github.com/tpope/vim-sensible)
 * [startify](https://github.com/mhinz/vim-startify)
