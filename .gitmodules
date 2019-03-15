@@ -73,3 +73,12 @@
 [submodule "bundle/vim"]
 	path = bundle/vim
 	url = https://github.com/dracula/vim.git
+[submodule "bundle/Zenburn"]
+	path = bundle/Zenburn
+	url = https://github.com/jnurmine/Zenburn.git
+[submodule "bundle/oceanic-next"]
+	path = bundle/oceanic-next
+	url = https://github.com/mhartington/oceanic-next.git
+[submodule "bundle/vim-hybrid"]
+	path = bundle/vim-hybrid
+	url = https://github.com/w0ng/vim-hybrid.git

@@ -22,31 +22,39 @@ Alternatively, you can install the submodules after doing a basic git clone into
 
 ## Plugins
 
+### Colorschemes
+* [dracula](https://github.com/dracula/vim/tree/b7e11c087fe2a9e3023cdccf17985704e27b125d)
+* [gruvbox](https://github.com/morhetz/gruvbox)
+* [hybrid](https://github.com/w0ng/vim-hybrid)
+* [monotone](https://github.com/Lokaltog/vim-monotone)
+* [night-owl.vim](https://github.com/haishanh/night-owl.vim)
+* [oceanic-next](https://github.com/mhartington/oceanic-next)
+* [onedark.vim](https://github.com/joshdick/onedark.vim)
+* [solarized8](https://github.com/lifepillar/vim-solarized8)
+* [tender.vim](https://github.com/jacoborus/tender.vim)
+* [zenburn](https://github.com/jnurmine/Zenburn.git)
+
+### Language
+* [graphql](https://github.com/jparise/vim-graphql)
+* [javascript](https://github.com/pangloss/vim-javascript)
+* [jsdoc-syntax](https://github.com/othree/jsdoc-syntax.vim)
+* [jsx](https://github.com/mxw/vim-jsx)
+
+### Tools
+* [airline](https://github.com/vim-airline/vim-airline)
+* [airline-themes](https://github.com/vim-airline/vim-airline-themes)
 * [ale](https://github.com/w0rp/ale)
 * [auto-pairs](https://github.com/jiangmiao/auto-pairs)
+* [closetag](https://github.com/alvan/vim-closetag)
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
-* [dracula](https://github.com/dracula/vim/tree/b7e11c087fe2a9e3023cdccf17985704e27b125d)
+* [fugitive](https://github.com/tpope/vim-fugitive)
+* [gitgutter](https://github.com/airblade/vim-gitgutter)
 * [goyo.vim](https://github.com/junegunn/goyo.vim)
-* [gruvbox](https://github.com/morhetz/gruvbox)
-* [jsdoc-syntax](https://github.com/othree/jsdoc-syntax.vim)
-* [night-owl.vim](https://github.com/haishanh/night-owl.vim)
-* [onedark.vim](https://github.com/joshdick/onedark.vim)
+* [sass-colors](https://github.com/shmargum/vim-sass-colors)
+* [sensible](https://github.com/tpope/vim-sensible)
+* [startify](https://github.com/mhinz/vim-startify)
 * [supertab](https://github.com/ervandew/supertab)
-* [tender.vim](https://github.com/jacoborus/tender.vim)
-* [vim-airline](https://github.com/vim-airline/vim-airline)
-* [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
-* [vim-closetag](https://github.com/alvan/vim-closetag)
-* [vim-fugitive](https://github.com/tpope/vim-fugitive)
-* [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
-* [vim-graphql](https://github.com/jparise/vim-graphql)
-* [vim-javascript](https://github.com/pangloss/vim-javascript)
-* [vim-jsx](https://github.com/mxw/vim-jsx)
-* [vim-monotone](https://github.com/Lokaltog/vim-monotone)
-* [vim-sass-colors](https://github.com/shmargum/vim-sass-colors)
-* [vim-sensible](https://github.com/tpope/vim-sensible)
-* [vim-solarized8](https://github.com/lifepillar/vim-solarized8)
-* [vim-startify](https://github.com/mhinz/vim-startify)
-* [vim-vinegar](https://github.com/tpope/vim-vinegar)
+* [vinegar](https://github.com/tpope/vim-vinegar)
 
 ### Plugin CLI
 

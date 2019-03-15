@@ -46,6 +46,10 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:goyo_linenr = 1
 nnoremap <Leader>g :Goyo<CR>
 
+" hybrid
+let g:hybrid_custom_term_colors = 1
+let g:hybrid_reduced_contrast = 1
+
 " onedark
 let g:onedark_terminal_italics = 1
 
@@ -71,14 +75,13 @@ au BufNewFile,BufRead *-story.js set filetype=javascript.jsx
 au BufNewFile,BufRead *.flow set filetype=javascript.jsx
 
 " vim-monotone
-" let g:monotone_color = [80, 58, 60]
+let g:monotone_color = [80, 58, 60]
 
 
 "-------------------------------------------------------------------------------
 " Interface:
 "-------------------------------------------------------------------------------
-set background=dark
-colorscheme solarized8_flat
+colorscheme hybrid
 let &showbreak='+++ '
 set background=dark mouse=a noshowcmd number relativenumber
 set termguicolors title
