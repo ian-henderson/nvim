@@ -81,8 +81,8 @@ let g:monotone_color = [80, 58, 60]
 "-------------------------------------------------------------------------------
 " Interface:
 "-------------------------------------------------------------------------------
-colorscheme hybrid
-let &showbreak='+++ '
+colorscheme solarized8
+let &showbreak='... '
 set background=dark mouse=a noshowcmd number relativenumber
 set termguicolors title
 
@@ -112,5 +112,5 @@ tnoremap <Esc> <C-\><C-n>
 "-------------------------------------------------------------------------------
 " Search:
 "-------------------------------------------------------------------------------
-set incsearch ignorecase smartcase path+=**
+set incsearch ignorecase path+=** smartcase
 set wildmenu wildignorecase wildignore+=*/tmp/*,*/cache/*,*/node_modules/*,*.so,*.swp,*.zip
