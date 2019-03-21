@@ -13,4 +13,4 @@ do
   file=$(basename $plugin)
   file_name="${file%.*}"
   echo $file_name
-done | uniq | sort
+done | sort --ignore-case --unique
