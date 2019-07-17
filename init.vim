@@ -81,7 +81,7 @@ let g:monotone_color = [80, 58, 60]
 "-------------------------------------------------------------------------------
 " Interface:
 "-------------------------------------------------------------------------------
-colorscheme onedark
+colorscheme hybrid
 let &showbreak='... '
 set background=dark mouse=a noshowcmd number relativenumber
 set termguicolors title
