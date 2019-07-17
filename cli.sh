@@ -1,5 +1,11 @@
 #!/bin/bash
 
+if [ -z ${NVIM_DIR+x} ]
+then
+  echo "\$NVIM not set - Exiting."
+  exit 1
+fi
+
 if [ $# -eq 0 ]
 then
   $NVIM_DIR/scripts/cli_description.sh
