@@ -10,6 +10,7 @@
 filetype plugin indent on
 syntax on
 autocmd BufWritePre * %s/\s\+$//e " Removes trailing whitespace on save
+set backupcopy=yes
 
 
 "-------------------------------------------------------------------------------
@@ -81,7 +82,7 @@ let g:monotone_color = [80, 58, 60]
 "-------------------------------------------------------------------------------
 " Interface:
 "-------------------------------------------------------------------------------
-colorscheme hybrid
+colorscheme gruvbox
 let &showbreak='... '
 set background=dark mouse=a noshowcmd number relativenumber
 set termguicolors title
