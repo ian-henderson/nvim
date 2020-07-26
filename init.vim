@@ -82,7 +82,7 @@ let g:monotone_color = [80, 58, 60]
 "-------------------------------------------------------------------------------
 " Interface:
 "-------------------------------------------------------------------------------
-colorscheme gruvbox
+colorscheme OceanicNext
 let &showbreak='... '
 set background=dark mouse=a noshowcmd number relativenumber
 set termguicolors title
